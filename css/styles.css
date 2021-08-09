@@ -1,0 +1,110 @@
+/* site-header */
+
+.site-header__heading {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 600;
+}
+
+.site-header__button {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.site-header__button:hover {
+  opacity: 0.7;
+}
+
+.site-header__button::before {
+  display: block;
+  content: '';
+  width: 15px;
+  height: 14px;
+  background-image: url("../img/month.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 5px;
+}
+
+.search-icon {
+  padding-left: 88px;
+  max-width: 480px;
+  outline: 0;
+  border: 1px solid transparent;
+  background: #fff;
+  box-shadow: 0 2px 9px rgb(0 0 0 / 5%);
+  border-radius: 5px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(35px) center;
+  transition: border 0.3s ease, opacity .3s ease;
+}
+
+.germany {
+  border: 1px solid black;
+}
+
+.germany-img {
+  width: 100%;
+}
+
+.region-country {
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  padding: 18px 77px 18px 24px;
+}
+
+.country {
+  font-size: 1.2rem;
+}
+
+.germany:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+
+  .search-icon {
+    max-width: 100%;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .region-country {
+    max-width: 260px;
+    margin-top: 15px;
+  }
+
+  .germany {
+    width: 100%;
+    border: 1px solid rgb(252, 252, 252);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .country-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .germany {
+    width: 100%;
+  }
+
+  .form-img {
+    width: 100%;
+  }
+}
